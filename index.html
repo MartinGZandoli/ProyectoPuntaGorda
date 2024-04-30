@@ -8,17 +8,31 @@
     <style>
         /* Estilos para el encabezado */
         header {
-            background-color: #333; /* Color de fondo del encabezado */
+            background-color: #1E6C02; /* Color de fondo del encabezado */
             color: #fff; /* Color de texto del encabezado */
-            padding: 20px; /* Espaciado interno del encabezado */
+            padding: 0px; /* Espaciado interno del encabezado */
             display: flex; /* Utilizamos flexbox para el diseño */
             align-items: center; /* Centramos verticalmente los elementos */
         }
         /* Estilos para la imagen del logo */
         .logo {
             width: 100px; /* Ancho de la imagen */
-            margin-right: 20px; /* Margen derecho para separar la imagen del texto */
+            margin-right: 50px; /* Margen derecho para separar la imagen del texto */
         }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0; /* Eliminar el relleno predeterminado */
+            margin: 10px; /* Eliminar el margen predeterminado */
+            list-style-type: none; /* Eliminar los puntos de la lista */
+        }
+
+        /* Estilo para cada elemento */
+        li {
+            flex: 1 0 25%; /* Ocupar 25% del ancho y no encoger más allá de su contenido */
+            box-sizing: border-box; /* Incluir el relleno y el borde en el ancho del elemento */
+            padding: 10px; /* Agregar un poco de espacio interno */
+            text-align: center; /* Centrar el texto */
     </style>
 </head>
     
@@ -26,22 +40,21 @@
     <!-- Encabezado de la página -->
     <header>
         <!-- Imagen del logo en el lado izquierdo -->
-        <img src="ruta/de/la/imagen/logo.jpg" alt="Logo de la empresa" class="logo">
+        <img src="img/logo.png" alt="Logo de la empresa" class="logo">
         <!-- Texto del encabezado -->
         <h1>Punta Gorda</h1>
     </header>   
-<ul>
-    <li>Inicio</li>
-    <li><a href="Servicios.html">Productos</a></li>
-    <li><a href="Nosotros.html">Nosotros</a></li>
-    <li><a href="Contacto.html">Contacto</a></li>
+    <ul>
+        <li><a href="index.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Inicio</a></li>
+    <li><a href="Servicios.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Productos</a></li>
+    <li><a href="Nosotros.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Nosotros</a></li>
+    <li><a href="Contacto.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Contacto</a></li>
 </ul>
      </nav>
     </header>
     <main>
-    <h2>Productos Artesanales</h2>
-    <img src="img/logo.png" alt="logo sitio">
-    <p>"Punta Gorda: Sabores que Marcan la Diferencia."</p>
+    <img src="img/tomate.jpg" alt="fabrica" style="max-width: 100%; height: auto;">
+    <p style="font-family: 'Knewave', cursive; color: #5f0404; font-size: 24px"> Punta Gorda: Sabores que Marcan la Diferencia.</p>
     </main>
     <footer>
 

@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punta Gorda</title>
-</head>
-<body>
-    <header>
-        <h1>Punta Gorda</h1>
-     <nav>   
-<ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="Servicios.html">Productos</a></li>
-    <li><a href="Nosotros.html">Nosotros</a></li>
-    <li>Contacto</li>
-</ul>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encabezado de Página</title>
+        <style>
+            /* Estilos para el encabezado */
+            header {
+                background-color: #1E6C02; /* Color de fondo del encabezado */
+                color: #fff; /* Color de texto del encabezado */
+                padding: 0px; /* Espaciado interno del encabezado */
+                display: flex; /* Utilizamos flexbox para el diseño */
+                align-items: center; /* Centramos verticalmente los elementos */
+            }
+            /* Estilos para la imagen del logo */
+            .logo {
+                width: 100px; /* Ancho de la imagen */
+                margin-right: 50px; /* Margen derecho para separar la imagen del texto */
+            }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0; /* Eliminar el relleno predeterminado */
+            margin: 10px; /* Eliminar el margen predeterminado */
+            list-style-type: none; /* Eliminar los puntos de la lista */
+        }
+
+        /* Estilo para cada elemento */
+        li {
+            flex: 1 0 25%; /* Ocupar 25% del ancho y no encoger más allá de su contenido */
+            box-sizing: border-box; /* Incluir el relleno y el borde en el ancho del elemento */
+            padding: 10px; /* Agregar un poco de espacio interno */
+            text-align: center; /* Centrar el texto */
+        </style>
+    </head>
+        
+    <body>
+        <!-- Encabezado de la página -->
+        <header>
+            <!-- Imagen del logo en el lado izquierdo -->
+            <img src="img/logo.png" alt="Logo de la empresa" class="logo">
+            <!-- Texto del encabezado -->
+            <h1>Punta Gorda</h1>
+        </header>     
+        <ul>
+            <li><a href="index.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Inicio</a></li>
+        <li><a href="Servicios.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Productos</a></li>
+        <li><a href="Nosotros.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Nosotros</a></li>
+        <li><a href="Contacto.html" style="display: inline-block; padding: 10px 100px; background-color: #C90707; color: #fff; text-align: center; border-radius: 5px;">Contacto</a></li>
+    </ul>
      </nav>
     </header>
     <main>
-    <h2>Productos Artesanales</h2>
-    <h3>Contacto</h3>
-    <p> Nombre de la Empresa: Punta Gorda S.A.
-        Dirección: Avenida Ficticia 456, Diamante, Entre Ríos, Argentina
-        Teléfono: +54 9 343 1234567
-        Correo Electrónico: info@puntagordasa.com
-        Sitio Web: www.puntagordasa.com </p>  
+    <p style="font-family: 'Knewave', cursive; color: #5f0404; font-size: 24px"> Nombre de la Empresa: Punta Gorda S.A. <br> Dirección: Avenida Ficticia 456, Diamante, Entre Ríos, Argentina <br>Teléfono: +54 9 343 1234567 <br>Correo Electrónico: info@puntagordasa.com <br>Sitio Web: www.puntagordasa.com </p>  
     </main>
     <footer>
 
